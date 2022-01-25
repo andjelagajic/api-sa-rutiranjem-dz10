@@ -1,0 +1,13 @@
+<div class="row my-5 border border-dark" *ngFor="let photo of photos">
+  <div class="col-2 d-flex align-items-center">
+    <img src="{{ photo.url }}" alt="..." class="img-fluid img-thumbnail" />
+  </div>
+  <div class="col-8 d-flex align-items-center">
+    <div>
+      <p>{{ photo.title }}</p>
+      <button routerLink="/photos/{{ photo.id }}" class="btn btn-secondary">
+        View More...
+      </button>
+    </div>
+  </div>
+</div>
